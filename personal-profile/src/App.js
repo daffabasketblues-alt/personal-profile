@@ -1,11 +1,21 @@
-function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import AboutSection from "./components/AboutSection";
+import SkillsSection from "./components/SkillsSection";
+import PortfolioSection from "./components/PortfolioSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+
+export default function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gradient-to-r from-pink-200 to-blue-200">
-      <h1 className="text-4xl font-bold text-blue-700">
-        Tailwind CSS sudah aktif 🎉
-      </h1>
+    <div className="font-sans bg-gray-50 text-slate-800">
+      <Navbar />
+      <Hero />
+      <AboutSection />
+      <SkillsSection />
+      <PortfolioSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
-
-export default App;
